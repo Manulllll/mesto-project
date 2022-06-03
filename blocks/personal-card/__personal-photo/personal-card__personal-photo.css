@@ -1,0 +1,5 @@
+.personal-card__personal-photo {
+  width: 120px;
+  border-radius: 60px;
+  grid-area: personal-photo;
+}

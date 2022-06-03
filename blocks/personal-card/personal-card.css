@@ -1,0 +1,29 @@
+.personal-card {
+  width: 68.5%;
+  max-width: 880px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-areas:
+    "personal-photo name-container add-button"
+    "personal-photo personal-description add-button";
+}
+
+@media screen and (max-width: 940px) {
+  .personal-card {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "personal-photo"
+      "name-container"
+      "personal-description"
+      "add-button";
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .personal-card {
+    width: 100%;
+    height: auto;
+  }
+}

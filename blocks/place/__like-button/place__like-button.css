@@ -1,0 +1,9 @@
+.place__like-button {
+  width: 22px;
+  margin-left: 22px;
+}
+
+.place__like-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}

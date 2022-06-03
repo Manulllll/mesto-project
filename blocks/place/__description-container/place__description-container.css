@@ -1,0 +1,7 @@
+.place__description-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  min-height: 80px;
+  align-items: center;
+}

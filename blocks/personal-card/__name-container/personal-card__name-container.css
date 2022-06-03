@@ -1,0 +1,12 @@
+.personal-card__name-container {
+  grid-area: name-container;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  max-width: 580px;
+}
+@media screen and (max-width: 940px) {
+  .personal-card__name-container {
+    margin-top: 26px;
+  }
+}

@@ -1,0 +1,32 @@
+.personal-card__add-button {
+  width: 150px;
+  height: 50px;
+  grid-area: add-button;
+  align-self: center;
+  background-image: url(../../../images/Add\ Button_1280.svg);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-repeat: no-repeat;
+}
+
+.personal-card__add-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 940px) {
+  .personal-card__add-button {
+    background-position: center;
+    background-image: url(../../../images/Add\ Button_320.svg);
+    width: 282px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .personal-card__add-button {
+    width: 100%;
+    max-height: 50px;
+    object-fit: cover;
+  }
+}
