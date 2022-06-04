@@ -2,10 +2,14 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  max-width: 300px;
   color: #ffffff;
   margin: 0;
   padding: 0;
   grid-area: personal-description;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 940px) {
@@ -19,5 +23,6 @@
   .personal-card__description {
     font-size: 14px;
     line-height: 17px;
+    max-width: 190px;
   }
 }

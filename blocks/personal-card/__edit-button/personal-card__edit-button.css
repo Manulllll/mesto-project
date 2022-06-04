@@ -1,7 +1,14 @@
 .personal-card__edit-button {
   width: 24px;
+  height: 24px;
   margin: 0;
   padding: 0;
+  background-image: url(../../../images/Edit\ Button.svg);
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  align-self: center;
 }
 
 .personal-card__edit-button:hover {
@@ -11,6 +18,8 @@
 
 @media screen and (max-width: 560px) {
   .personal-card__edit-button {
+    background-image: url(../../../images/like\ button_320.svg);
     width: 18px;
+    height: 18px;
   }
 }

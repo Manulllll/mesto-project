@@ -2,6 +2,7 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
-  min-height: 80px;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 31px;
 }
