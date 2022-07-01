@@ -1,0 +1,30 @@
+.opened-photo__close-button{
+  background-image: url(../../../images/popup_close-icon.svg);
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  align-self: center;
+}
+
+.opened-photo__close-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .opened-photo__close-button {
+    background-image: url(../../../images/popup_close-icon_320.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: -30px;
+    right: -25px;
+  }
+}
+

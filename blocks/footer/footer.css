@@ -1,15 +1,15 @@
 .footer {
   width: 68.5%;
   max-width: 880px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   margin: auto;
   display: flex;
   align-items: flex-start;
-}
+  }
 
 @media screen and (max-width: 560px) {
   .footer {
     width: 90%;
-    padding-bottom: 36px;
+    margin-bottom: 36px;
   }
 }
