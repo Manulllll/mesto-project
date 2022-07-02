@@ -45,20 +45,19 @@
                 />
                 <button class="place__delete-button" type="button"></button>
               </div>
-
               <div class="place__description-container">
                 <h2 class="place__name">Карачаевск</h2>
                 <button class="place__like-button" type="button"></button>
               </div>
             </div>
-          </template>
+                      </template>
         </section>
       </main>
       <footer class="footer">
         <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
       </footer>
 
-      <section class="popup">
+      <section class="popup profile-popup">
         <div class="popup__container">
           <button class="popup__close-icon" type="button"></button>
           <h2 class="popup__title">Редактировать профиль</h2>
@@ -69,7 +68,7 @@
           </form>
         </div>
       </section>
-      <section class="popup">
+      <section class="popup card-popup">
         <div class="popup__container">
           <button class="popup__close-icon" type="button"></button>
           <h2 class="popup__title">Новое место</h2>
@@ -90,17 +89,17 @@
           </form>
         </div>
       </section>
-      <section class="opened-photo">
-        <div class="opened-photo__container">
-          <figure class="opened-photo__image-container">
+      <section class="popup place-popup">
+        <div class="popup__place-container">
+          <button class="popup__close-icon" type="button"></button>
+          <figure class="popup__image-container">
             <img
               src="images/place-image-karachaevs.png"
               alt="Карачаевск"
-              class="opened-photo__image"
+              class="popup__image"
             />
-            <figcaption class="opened-photo__image-name">Карачаевск</figcaption>
+            <figcaption class="popup__image-name">Карачаевск</figcaption>
           </figure>
-          <button class="opened-photo__close-button" type="button"></button>
         </div>
       </section>
     </div>
