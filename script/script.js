@@ -51,6 +51,7 @@ const nameInput = document.querySelector("form.popup__form input[name=name]");
 const jobInput = document.querySelector(
   "form.popup__form input[name=description]"
 );
+const personalInformationForm = profilePopup.querySelector('.popup__form');
 
 //зоны отображения личной информации на странице
 
@@ -122,18 +123,18 @@ addButton.addEventListener("click", () => {
 
 // Редактирование информации пользователя
 
-function formSubmitPersonalInformation(evt) {
+function sendSubmitPersonalInformation(evt) {
   evt.preventDefault();
 
   personalName.textContent = nameInput.value;
   personalJob.textContent = jobInput.value;
 
-  profilePopup.classList.remove("popup_opened");
-}
+  closePopup(profilePopup);
+ }
 
-submitPersonalInformation.addEventListener(
-  "click",
-  formSubmitPersonalInformation
+personalInformationForm.addEventListener(
+  "submit",
+  sendSubmitPersonalInformation
 );
 
 // Функция для создания карточек из массива или из формы
@@ -183,7 +184,7 @@ function showNewCard(nameCard, linkCard) {
 function addNewCard() {
   showNewCard(inputPlaceName.value, inputPlaceLink.value); //выполняем функцию рендера карты для элемента из формы
 
-  cardPopup.classList.remove("popup_opened");
+  closePopup(cardPopup);
 }
 
 //рендер карт из массива
@@ -194,17 +195,13 @@ initialCards.forEach(function (card) {
 
 //рендер карт из формы
 
-submitNewCard.addEventListener("click", (event) => {
+addNewCardForm.addEventListener("submit", (event) => {
   event.preventDefault();
   addNewCard();
   resetPlacePopup();
 });
 
 //сброс данных при закрытии формы добавления карты
-
-closePlacePopup.addEventListener('click', () => {
-  resetPlacePopup();
-})
 
 function resetPlacePopup () {
   addNewCardForm.reset();
